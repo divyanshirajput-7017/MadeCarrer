@@ -1,8 +1,7 @@
-
-# 🚀 CareerPulse Pro 
+# 🚀 MadeCareer
 ### *Your AI-Powered Personal Career Intelligence Assistant*
 
-**CareerPulse Pro** is a full-stack SaaS platform designed to bridge the gap between academic learning and professional employment. By leveraging Artificial Intelligence, it provides a centralized ecosystem for students and early professionals to track, analyze, and improve their job readiness in real-time.
+**MadeCareer** is a full-stack SaaS platform designed to bridge the gap between academic learning and professional employment. By leveraging Artificial Intelligence, it provides a centralized ecosystem for students and early professionals to track, analyze, and improve their job readiness in real-time.
 
 ---
 
@@ -14,6 +13,8 @@
 - **🤖 AI Career Coach & Interview Simulator:** 24/7 interactive guidance and a simulator to practice role-specific technical and behavioral questions.
 - **🧩 Skill Gap Analysis:** Compare your current profile against specific Job Descriptions (JD) to identify missing competencies.
 
+---
+
 ## 🛠 Tech Stack
 
 - **Frontend:** React.js, Tailwind CSS, Framer Motion
@@ -24,101 +25,109 @@
 
 ### Frontend
 
-- **React 18+** - Modern React with hooks and concurrent features
-- **TypeScript 5** - Full type safety across the application
-- **Vite 5** - Fast build tool and dev server with HMR
-- **Tailwind CSS 3** - Utility-first CSS framework
-- **shadcn/ui** - Beautiful, accessible component library
-- **React Router DOM** - Client-side routing
-- **Framer Motion** - Smooth animations and transitions
+- React 18+ — Modern React with hooks and concurrent features
+- TypeScript 5 — Full type safety across the application
+- Vite 5 — Fast build tool and dev server with HMR
+- Tailwind CSS 3 — Utility-first CSS framework
+- shadcn/ui — Beautiful, accessible component library
+- React Router DOM — Client-side routing
+- Framer Motion — Smooth animations and transitions
 
 ### Backend
 
-- **Node.js API** - Simple health check and utilities
-- **TypeScript** - Type-safe backend development
+- Node.js API — Simple health check and utilities
+- TypeScript — Type-safe backend development
 
 ### Development Tools
 
-- **ESLint 9** - Code linting
-- **Prettier** - Code formatting
-- **Vitest** - Fast unit testing
-- **TypeScript ESLint** - TypeScript-specific linting
+- ESLint 9 — Code linting
+- Prettier — Code formatting
+- Vitest — Fast unit testing
+- TypeScript ESLint — TypeScript-specific linting
 
 > **Note:** SSR support with vite-plugin-ssr has been temporarily removed due to compatibility issues with the directory structure. This can be re-added later when the plugin is updated or replaced with a more stable alternative.
 
+---
+
 ## 📁 Project Structure
 
-```
+```text
 v8-app-template/
 ├── src/
-│   ├── components/       # React components
-│   │   ├── ui/           # shadcn/ui base components (40+ components)
+│   ├── components/
+│   │   ├── ui/
 │   │   └── Spinner.tsx
-│   ├── layouts/          # Layout systems
-│   │   ├── RootLayout.tsx    # Centralized layout wrapper
-│   │   ├── Website.tsx       # Structural container
-│   │   ├── Dashboard.tsx     # Dashboard layout
-│   │   ├── RootLayout.md     # RootLayout documentation
-│   │   ├── Website.md        # Website layout documentation
-│   │   └── parts/            # Layout components
+│   ├── layouts/
+│   │   ├── RootLayout.tsx
+│   │   ├── Website.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── RootLayout.md
+│   │   ├── Website.md
+│   │   └── parts/
 │   │       ├── Header.tsx
 │   │       └── Footer.tsx
-│   ├── pages/            # Page components (content only)
-│   │   ├── index.tsx     # Homepage
-│   │   └── _404.tsx      # 404 page
-│   ├── lib/              # Utilities and API
-│   │   ├── utils.ts      # Utility functions
-│   │   └── api-client.ts # API client
-│   ├── api/              # Backend API routes
-│   │   └── health.ts     # Health check endpoint
-│   ├── styles/           # Global styles
+│   ├── pages/
+│   │   ├── index.tsx
+│   │   └── _404.tsx
+│   ├── lib/
+│   │   ├── utils.ts
+│   │   └── api-client.ts
+│   ├── api/
+│   │   └── health.ts
+│   ├── styles/
 │   │   └── globals.css
-│   ├── test/             # Test setup
+│   ├── test/
 │   │   └── setup.ts
-│   ├── App.tsx           # Root application component
-│   ├── main.tsx          # Application entry point
-│   ├── router.ts         # Route definitions
-│   └── routes.tsx        # Route components
-├── dev-tools/            # Development mode enhancements
-├── source-mapper/        # AI introspection plugin
-├── public/               # Static assets
-└── scripts/              # Development scripts
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── router.ts
+│   └── routes.tsx
+├── dev-tools/
+├── source-mapper/
+├── public/
+└── scripts/
 ```
+
+---
 
 ## 📜 Available Scripts
 
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run test` - Run Vitest unit tests
-- `npm run lint` - Run ESLint code linting
-- `npm run type-check` - Run TypeScript type checking
-- `npm run setup` - Initialize project with dependencies
+- `npm run dev` — Start development server with hot reload
+- `npm run build` — Build for production
+- `npm run preview` — Preview production build locally
+- `npm run test` — Run Vitest unit tests
+- `npm run lint` — Run ESLint code linting
+- `npm run type-check` — Run TypeScript type checking
+- `npm run setup` — Initialize project with dependencies
+
+---
 
 ## 🎨 UI Components
 
 This template includes shadcn/ui components that are:
 
-- **Accessible** - Built with Radix UI primitives
-- **Customizable** - Easy to modify and extend
-- **Consistent** - Design system with CSS variables
-- **Copy-paste friendly** - Own your components
+- **Accessible** — Built with Radix UI primitives
+- **Customizable** — Easy to modify and extend
+- **Consistent** — Design system with CSS variables
+- **Copy-paste friendly** — Own your components
 
 The template includes 40+ pre-configured shadcn/ui components:
 
-- **Layout**: Card, Separator, Tabs, Sheet, Dialog
-- **Forms**: Button, Input, Textarea, Select, Checkbox, Switch
-- **Navigation**: Navigation Menu, Breadcrumb, Pagination
-- **Feedback**: Alert, Badge, Progress, Skeleton, Sonner
-- **Data Display**: Table, Avatar, Calendar, Hover Card
-- **Overlays**: Popover, Tooltip, Alert Dialog, Drawer
-- **Interactive**: Accordion, Collapsible, Command, Context Menu
+- **Layout:** Card, Separator, Tabs, Sheet, Dialog
+- **Forms:** Button, Input, Textarea, Select, Checkbox, Switch
+- **Navigation:** Navigation Menu, Breadcrumb, Pagination
+- **Feedback:** Alert, Badge, Progress, Skeleton, Sonner
+- **Data Display:** Table, Avatar, Calendar, Hover Card
+- **Overlays:** Popover, Tooltip, Alert Dialog, Drawer
+- **Interactive:** Accordion, Collapsible, Command, Context Menu
 
 To add new components:
 
 ```bash
 npx shadcn-ui@latest add component-name
 ```
+
+---
 
 ## 🧠 AI Integration
 
@@ -140,17 +149,19 @@ The custom source-mapper plugin adds metadata to components in development:
 
 The dev-tools package provides:
 
-- **Element selection**: Click to identify components
-- **Live editing**: Modify component props in real-time
-- **Source mapping**: Navigate directly to component source
-- **AI integration**: Enhanced context for AI development tools
+- **Element selection:** Click to identify components
+- **Live editing:** Modify component props in real-time
+- **Source mapping:** Navigate directly to component source
+- **AI integration:** Enhanced context for AI development tools
 
 ### AI-Friendly Patterns
 
-- **Consistent naming**: PascalCase components, camelCase hooks
-- **Clear file structure**: Logical separation of concerns
-- **Type-first approach**: Comprehensive TypeScript types
-- **Standard patterns**: CRUD operations, form handling, error boundaries
+- **Consistent naming:** PascalCase components, camelCase hooks
+- **Clear file structure:** Logical separation of concerns
+- **Type-first approach:** Comprehensive TypeScript types
+- **Standard patterns:** CRUD operations, form handling, error boundaries
+
+---
 
 ## 🗃️ API & Layouts
 
@@ -158,54 +169,42 @@ The dev-tools package provides:
 
 The template includes:
 
-- `GET /api/health` - Health check endpoint
+- `GET /api/health` — Health check endpoint
 - Extensible API client setup in `src/lib/api-client.ts`
 
 ### Layout System
 
-**RootLayout Pattern** (Recommended for multi-page sites):
+**RootLayout Pattern (Recommended for multi-page sites)**
 
-Configure header and footer once in `App.tsx`, applies to all pages:
+Configure header and footer once in `App.tsx`, applying them to all pages:
 
 ```tsx
-// src/App.tsx
 const headerConfig = {
-  logo: { text: "MyApp" },
+  logo: { text: "MadeCareer" },
   navItems: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
   ],
 };
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <RootLayout config={{ header: headerConfig, footer: footerConfig }}>
-        <Outlet />
-      </RootLayout>
-    ),
-    children: routes,
-  },
-]);
 ```
 
 Pages become simple content components:
 
 ```tsx
-// src/pages/home.tsx
 export default function HomePage() {
   return <div>Your content here</div>;
 }
 ```
 
-**Available Layouts**:
+**Available Layouts:**
 
-- **RootLayout** (`src/layouts/RootLayout.tsx`) - Centralized header/footer wrapper
-- **Website** (`src/layouts/Website.tsx`) - Structural container (used by RootLayout)
-- **Dashboard** (`src/layouts/Dashboard.tsx`) - Admin panels and dashboards
+- **RootLayout** (`src/layouts/RootLayout.tsx`) — Centralized header/footer wrapper
+- **Website** (`src/layouts/Website.tsx`) — Structural container used by RootLayout
+- **Dashboard** (`src/layouts/Dashboard.tsx`) — Admin panels and dashboards
 
 See `src/layouts/*.md` for detailed usage documentation.
+
+---
 
 ## 🧪 Testing
 
@@ -217,23 +216,27 @@ npm run test
 
 The template includes:
 
-- **Vitest** - Fast unit testing framework
-- **React Testing Library** - Component testing utilities
-- **Jest DOM** - Custom Jest matchers
+- **Vitest** — Fast unit testing framework
+- **React Testing Library** — Component testing utilities
+- **Jest DOM** — Custom Jest matchers
+
+---
 
 ## 📦 Deployment
 
-### Build for production:
+### Build for production
 
 ```bash
 npm run build
 ```
 
-### Deploy options:
+### Deploy options
 
-- **Vercel/Netlify** - Frontend deployment
-- **Railway/Render** - Full-stack deployment
-- **Docker** - Containerized deployment
+- **Vercel/Netlify** — Frontend deployment
+- **Railway/Render** — Full-stack deployment
+- **Docker** — Containerized deployment
+
+---
 
 ## 🔧 Configuration
 
@@ -242,17 +245,19 @@ npm run build
 Copy `env.example` to `.env` and configure:
 
 ```env
-VITE_APP_NAME=V8 App Template
+VITE_APP_NAME=MadeCareer
 VITE_API_URL=http://localhost:5173/api
 NODE_ENV=development
 PORT=5173
 ```
 
-### Custom Plugins
+---
 
-**Source Mapper Plugin**: Adds component introspection for AI tools
-**Dev Tools Plugin**: Enables development mode enhancements
-**Fullstory Integration**: Optional user analytics (configurable)
+## 🔌 Custom Plugins
+
+- **Source Mapper Plugin:** Adds component introspection for AI tools.
+- **Dev Tools Plugin:** Enables development mode enhancements.
+- **Fullstory Integration:** Optional user analytics, configurable as needed.
 
 Configure in `vite.config.ts`:
 
@@ -266,6 +271,8 @@ export default defineConfig({
 });
 ```
 
+---
+
 ## 🎯 Best Practices
 
 ### Component Architecture
@@ -278,30 +285,34 @@ export default defineConfig({
 ### State Management
 
 - Keep local state in components with useState/useReducer
-- Use React Context for app-wide state (theme, auth)
-- Consider external libraries (Zustand, Redux Toolkit) for complex state
+- Use React Context for app-wide state, such as theme and authentication
+- Consider Zustand or Redux Toolkit for complex state
 - Leverage layout props for shared configuration
 
 ### Layout Usage
 
-- Use RootLayout for multi-page sites (configure in `App.tsx`)
-- Pages should only contain content, not layout concerns
-- Define header/footer once, applies to all pages
-- Follow layout documentation in `src/layouts/*.md`
-- Never duplicate header/footer config across pages
+- Use RootLayout for multi-page sites
+- Configure header and footer once
+- Keep pages focused on content
+- Follow layout documentation
+- Avoid duplicating header/footer configuration
+
+---
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if needed
-5. Run linting and tests
-6. Submit a pull request
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Add tests if needed.
+5. Run linting and tests.
+6. Submit a pull request.
+
+---
 
 ## 📄 License
 
-MIT License - feel free to use this template for any project.
+MIT License — refer to the project's license file for details.
 
 ## 🙏 Acknowledgments
 
@@ -317,4 +328,4 @@ Built with amazing open-source tools:
 
 ---
 
-**Happy coding! 🎉**
+**Welcome to MadeCareer — Build skills. Shape your career. 🚀**
